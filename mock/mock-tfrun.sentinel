@@ -1,0 +1,37 @@
+id = "run-f1C72nRMWTHZmRvV"
+created_at = "2021-11-29T08:31:22.196Z"
+message = "Triggered via UI"
+commit_sha = "3532f19905d5a1465c8de9e36d2094d1e7507daf"
+speculative = false
+is_destroy = false
+refresh = true
+refresh_only = false
+replace_addrs = null
+target_addrs = null
+
+variables = {
+	"GOOGLE_CREDENTIALS": {
+		"category":  "env",
+		"sensitive": true,
+	},
+}
+
+organization = {
+	"name": "ashwinkumarnaik91",
+}
+
+workspace = {
+	"auto_apply":  false,
+	"created_at":  "2021-11-29T08:23:48.021Z",
+	"description": null,
+	"id":          "ws-AVPE4kF48vuzbWP1",
+	"name":        "Rajeev-postgres-sql-version-policy",
+	"tags":        [],
+	"vcs_repo": {
+		"branch":             "",
+		"display_identifier": "rajeevkghosh/postgres-sql-version-policy",
+		"identifier":         "rajeevkghosh/postgres-sql-version-policy",
+		"ingress_submodules": false,
+	},
+	"working_directory": "",
+}

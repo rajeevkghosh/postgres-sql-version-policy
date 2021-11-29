@@ -1,0 +1,69 @@
+import "strings"
+
+providers = {
+	"google": {
+		"alias": "",
+		"config": {
+			"project": {
+				"constant_value": "airline1-sabre-wolverine",
+			},
+		},
+		"module_address":      "",
+		"name":                "google",
+		"provider_config_key": "google",
+		"version_constraint":  "",
+	},
+}
+
+resources = {
+	"google_sql_database_instance.master": {
+		"address": "google_sql_database_instance.master",
+		"config": {
+			"database_version": {
+				"constant_value": "POSTGRES_11",
+			},
+			"deletion_protection": {
+				"constant_value": false,
+			},
+			"name": {
+				"constant_value": "us-dev-abcd-fghi-postgres-master1",
+			},
+			"region": {
+				"constant_value": "us-central1",
+			},
+			"settings": [
+				{
+					"tier": {
+						"constant_value": "db-f1-micro",
+					},
+				},
+			],
+		},
+		"count":               {},
+		"depends_on":          [],
+		"for_each":            {},
+		"mode":                "managed",
+		"module_address":      "",
+		"name":                "master",
+		"provider_config_key": "google",
+		"provisioners":        [],
+		"type":                "google_sql_database_instance",
+	},
+}
+
+provisioners = {}
+
+variables = {}
+
+outputs = {}
+
+module_calls = {}
+
+strip_index = func(addr) {
+	s = strings.split(addr, ".")
+	for s as i, v {
+		s[i] = strings.split(v, "[")[0]
+	}
+
+	return strings.join(s, ".")
+}

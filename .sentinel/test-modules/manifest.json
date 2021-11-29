@@ -1,0 +1,16 @@
+{
+	"records": [
+		{
+			"key": "test/postgresql-version/postgresql-version-fail/tfplan-functions",
+			"source": "../../tfplan-functions.sentinel",
+			"sourceSum": "",
+			"dest": "/home/rajeevghosh/wells-29NOV/postgres-sql-version-policy/tfplan-functions.sentinel"
+		},
+		{
+			"key": "test/postgresql-version/postgresql-version-pass/tfplan-functions",
+			"source": "../../tfplan-functions.sentinel",
+			"sourceSum": "",
+			"dest": "/home/rajeevghosh/wells-29NOV/postgres-sql-version-policy/tfplan-functions.sentinel"
+		}
+	]
+}
