@@ -11,7 +11,7 @@ import "tfplan-functions" as plan
 import "strings"
 import "types"
 
-allowed_database_versions = ["POSTGRES_11","POSTGRES_12","POSTGRES_13"]
+allowed_database_versions = ["POSTGRES_9_6","POSTGRES_10","POSTGRES_11","POSTGRES_12","POSTGRES_13"]
 
 # Get all SQL Database Instance
 allSqlDatabaseInstance = plan.find_resources("google_sql_database_instance")
@@ -23,7 +23,7 @@ for allSqlDatabaseInstance as address, rc {
 
     if not (database_version in allowed_database_versions) {
         violations[address] = rc
-        print("The database version for ~~~"+address+" ~~~should be from the following list: "+plan.to_string(allowed_database_versions))
+        print("The database version for: "+address+" should be from the following list: "+plan.to_string(allowed_database_versions))
     }
 }
 
