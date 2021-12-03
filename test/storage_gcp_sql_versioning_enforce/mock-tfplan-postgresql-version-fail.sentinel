@@ -16,7 +16,7 @@ planned_values = {
 			"type":           "google_sql_database_instance",
 			"values": {
 				"clone":                  [],
-				"database_version":       "POSTGRES_10",
+				"database_version":       "POSTGRES_8",
 				"deletion_protection":    false,
 				"name":                   "us-dev-abcd-fghi-postgres-master1",
 				"region":                 "us-central1",
@@ -54,7 +54,7 @@ resource_changes = {
 			],
 			"after": {
 				"clone":                  [],
-				"database_version":       "POSTGRES_10",
+				"database_version":       "POSTGRES_8",
 				"deletion_protection":    false,
 				"name":                   "us-dev-abcd-fghi-postgres-master1",
 				"region":                 "us-central1",
@@ -138,7 +138,7 @@ raw = {
 					"address": "google_sql_database_instance.master",
 					"expressions": {
 						"database_version": {
-							"constant_value": "POSTGRES_11",
+							"constant_value": "POSTGRES_8",
 						},
 						"deletion_protection": {
 							"constant_value": false,
@@ -197,7 +197,7 @@ raw = {
 					"type": "google_sql_database_instance",
 					"values": {
 						"clone":                  [],
-						"database_version":       "POSTGRES_11",
+						"database_version":       "POSTGRES_8",
 						"deletion_protection":    false,
 						"name":                   "us-dev-abcd-fghi-postgres-master1",
 						"region":                 "us-central1",
@@ -233,7 +233,7 @@ raw = {
 				],
 				"after": {
 					"clone":                  [],
-					"database_version":       "POSTGRES_11",
+					"database_version":       "POSTGRES_8",
 					"deletion_protection":    false,
 					"name":                   "us-dev-abcd-fghi-postgres-master1",
 					"region":                 "us-central1",
